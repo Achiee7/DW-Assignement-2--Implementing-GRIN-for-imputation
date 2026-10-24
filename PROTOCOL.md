@@ -1,11 +1,9 @@
 # Experiment protocol and provenance
 
-This project evaluates the authors' GRIN architecture on the original **AQI-36
-out-of-sample imputation benchmark**. The executed notebook uses a smaller
-training budget and one seed. It is a bounded reproduction attempt, not a
-reproduction of the complete five-run paper experiment. The original data,
-fixed evaluation mask, graph, architecture, objective and scoring protocol are
-retained. No test scores are used for model selection.
+This experiment uses the authors' GRIN model on the **AQI-36 out-of-sample
+benchmark**. The data, evaluation mask, graph, loss and scoring follow the paper.
+The notebook uses less training and one seed; the settings are listed below.
+Checkpoint selection uses validation data only.
 
 ## Source versions
 
@@ -145,8 +143,7 @@ The relevant paper Table 1 comparison is **out-of-sample AQI-36 GRIN**:
 MAE **12.08 ± 0.47**, MSE **523.14 ± 57.17**, MRE **17.00 ± 0.67%**. BRITS has
 MAE 14.50 ± 0.35. The in-sample GRIN MAE 10.51 is a different experiment.
 Local training-station-mean and linear-interpolation controls are also computed;
-they are explicitly local controls, not claims to reproduce the paper's baseline
-implementations. Linear interpolation uses visible past and future readings,
+they were implemented separately from the paper's baselines. Linear interpolation uses visible past and future readings,
 consistent with an offline imputation task.
 
 ## Runtime changes and saved evidence
@@ -156,16 +153,15 @@ uses a current, pinned PyTorch environment and an independent training loop to
 avoid obsolete Lightning/TensorFlow dependencies. Preprocessing replaces removed
 NumPy `in1d` and deprecated pandas filling/grouping interfaces with their modern
 equivalents. The downloaded GRIN model source is not modified or redistributed.
-Different runtimes, one seed and especially the reduced training budget can
-produce substantial differences from the paper; those differences must remain
-visible in the report.
+Software versions, random seeds and the amount of training may affect the
+comparison with the paper.
 
 Each completed run writes its full configuration, source/data provenance,
 per-epoch history, best checkpoint, aggregate test predictions, metrics and an
 artifact-checksum manifest. Cached results are loaded only when configuration,
 data fingerprint, upstream source hashes and saved-artifact hashes agree.
-The executed notebook records the actual output and comparisons rather than
-substituting the published score.
+The executed notebook contains the measured results and their comparison with
+the paper.
 
 Public API: `prepare_aqi36(data_dir)` returns `PreparedData`;
 `run_experiment(data, Config(), output_dir)` trains and evaluates;
