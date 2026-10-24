@@ -7,7 +7,8 @@ Networks* (ICLR 2022).
 The [Jupyter notebook](notebooks/grin_aqi36_reproduction.ipynb) contains the data
 preparation, training, results and plots. The [report](report/assignment2_report.pdf)
 has two pages summarising the paper and two pages describing the experiment.
-The highlighted paper is included in the separate Word document.
+The [complete report](report/assignment2_complete_report.pdf) also includes the
+introduction, table of contents and highlighted source paper.
 
 The CPU run uses **30 epochs, 512 windows per epoch and one seed**: 480 updates
 in total. The paper uses up to 300 epochs and 5,120 windows per epoch, repeated
@@ -51,8 +52,8 @@ Use **Python 3.12**. The notebook was run on Windows with a CPU. The first run
 downloads about 30 MB of data; installing PyTorch requires a larger download.
 
 ```text
-git clone https://github.com/Achiee7/dw-grin-reproduction.git
-cd dw-grin-reproduction
+git clone https://github.com/Achiee7/DW-Assignement-2--Implementing-GRIN-for-imputation.git
+cd DW-Assignement-2--Implementing-GRIN-for-imputation
 ```
 
 Create an environment in Windows PowerShell:
