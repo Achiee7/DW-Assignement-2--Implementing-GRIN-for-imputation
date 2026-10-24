@@ -10,6 +10,11 @@ explains the masks and graph, trains or verifies a saved model, plots results,
 and compares measured error with the paper. The report describes the procedure,
 parameter settings and differences; the notebook performs the implementation.
 
+The [four-page report PDF](report/assignment2_report.pdf) contains the two-page
+paper summary followed by the two-page reproduction report. The highlighted
+source paper is supplied separately with the Word report, rather than copied
+into this public code repository.
+
 **Scope:** the submitted run uses one seed, 30 epochs and 512 sampled windows per
 epoch: at most **480 updates**. The paper permits 300 epochs and 5,120 windows per
 epoch, up to **48,000 updates per run**, and reports five runs. This is a bounded
