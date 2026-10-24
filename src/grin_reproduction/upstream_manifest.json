@@ -1,0 +1,9 @@
+{
+  "lib/nn/utils/ops.py": "aebe58e525c43b2019d6f738a62f7479e3f802442596e5a7222eaf6f54cc31b8",
+  "lib/nn/layers/spatial_conv.py": "184e120e4e56b4ca421d07990cc432e524715e5afe52e0729a06ac66de2747c8",
+  "lib/nn/layers/gcrnn.py": "9a870c5ac208fc1f9d8e69c2a87aed5dd5547db6282be4d258aa221fddb669c9",
+  "lib/nn/layers/spatial_attention.py": "6a315c9cc280618d41b207881664517f91cd037b091a3c807c5f4eac07ff387e",
+  "lib/nn/layers/gril.py": "5f5439c79dbfd58cc498c569d9d3eaa6f21c21d15f8b19722d929a1e73cf2c00",
+  "lib/utils/parser_utils.py": "67bf0df52add8420e3783079a0a620483656ce542be3eec1b868072a582008ff",
+  "lib/nn/models/grin.py": "29f70d6556b958ccb5f0544b72fff23c68525984f83ad44e8a0d06b8819fc7e3"
+}

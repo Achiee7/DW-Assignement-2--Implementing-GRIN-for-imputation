@@ -1,0 +1,15 @@
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+data/
+results/*/checkpoints/
+*.tmp
+.env
+.env.*
+
+*.egg-info/
+notebooks/runs/
+
