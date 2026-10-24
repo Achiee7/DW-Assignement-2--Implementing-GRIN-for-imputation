@@ -1,0 +1,8 @@
+{
+  "config.json": "a9f6053897ccff01a4d31ab3e28824ca051873e528d0a5fa2dc17c07693abcfe",
+  "provenance.json": "4a4b7e8b64c292ec446ab4329ded18f757ac61be4032f42eaa52d6842d8ec0e4",
+  "history.json": "c3f1c6a34d8eefada44bc728daf671b75651908c35864c979aca1f12c9c801f9",
+  "metrics.json": "44df1482eb382e90e0b23e6d9a0720df7be7fe155eace99a5fb0bd394c9e934a",
+  "best_model.pt": "74ff8ef8cb00f0503b46482f6405bbd3cbc208273245e9ecc6178c88f15c200d",
+  "test_predictions.npz": "1c590894e34e5dd461223a6e6cdc2ce783c2832553d41546d75c0d88ce78a41d"
+}

@@ -1,0 +1,16 @@
+{
+  "profile": "bounded",
+  "seed": 42,
+  "max_epochs": 30,
+  "samples_per_epoch": 512,
+  "batch_size": 32,
+  "patience": 40,
+  "learning_rate": 0.001,
+  "min_learning_rate": 0.0001,
+  "whiten_probability": 0.05,
+  "gradient_clip": 5.0,
+  "hidden_size": 64,
+  "embedding_size": 8,
+  "num_threads": 1,
+  "device": "cpu"
+}

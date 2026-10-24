@@ -4,6 +4,7 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass
 import hashlib
 import json
+import os
 import platform
 from pathlib import Path
 import random
@@ -40,6 +41,8 @@ class Config:
 
 
 def seed_everything(seed):
+    # Required by deterministic CUDA matrix products; has no effect on CPU runs.
+    os.environ.setdefault("CUBLAS_WORKSPACE_CONFIG", ":4096:8")
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)

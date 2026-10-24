@@ -1,0 +1,6 @@
+Method,Evaluation,MAE,MSE
+GRIN local,Measured single seed,12.78933242604614,501.3931947911062
+Training station mean,Measured control,55.1844482421875,4721.5498046875
+Linear interpolation,Measured control,14.598261833190918,691.1583862304688
+GRIN paper,Published five-run mean,12.08,523.14
+BRITS paper,Published five-run mean,14.5,662.36

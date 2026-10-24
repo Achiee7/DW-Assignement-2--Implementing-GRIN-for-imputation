@@ -1,0 +1,32 @@
+{
+  "mae": 12.78933242604614,
+  "mse": 501.3931947911062,
+  "rmse": 22.3918108868199,
+  "mre": 0.18358650012562386,
+  "window_mae": 13.274202774258287,
+  "n_targets": 20434,
+  "n_windows": 2788,
+  "best_epoch": 18,
+  "best_validation_window_mae": 10.221093735551209,
+  "elapsed_seconds": 800.7982526998967,
+  "epochs_completed": 30,
+  "optimizer_updates": 480,
+  "parameter_count": 191079,
+  "seed": 42,
+  "profile": "bounded",
+  "published_grin_mae": 12.08,
+  "published_grin_mae_std": 0.47,
+  "difference_from_published_mae": 0.7093324260461404,
+  "baselines": {
+    "Training station mean": {
+      "mae": 55.1844482421875,
+      "mse": 4721.5498046875,
+      "n_targets": 20434
+    },
+    "Linear interpolation": {
+      "mae": 14.598261833190918,
+      "mse": 691.1583862304688,
+      "n_targets": 20434
+    }
+  }
+}

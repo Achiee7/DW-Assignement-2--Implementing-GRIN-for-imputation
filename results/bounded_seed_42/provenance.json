@@ -1,0 +1,52 @@
+{
+  "upstream_commit": "4a28afbb092600b6e6abeeabaaf67e87dbd1ed6e",
+  "source_sha256": {
+    "lib/nn/utils/ops.py": "aebe58e525c43b2019d6f738a62f7479e3f802442596e5a7222eaf6f54cc31b8",
+    "lib/nn/layers/spatial_conv.py": "184e120e4e56b4ca421d07990cc432e524715e5afe52e0729a06ac66de2747c8",
+    "lib/nn/layers/gcrnn.py": "9a870c5ac208fc1f9d8e69c2a87aed5dd5547db6282be4d258aa221fddb669c9",
+    "lib/nn/layers/spatial_attention.py": "6a315c9cc280618d41b207881664517f91cd037b091a3c807c5f4eac07ff387e",
+    "lib/nn/layers/gril.py": "5f5439c79dbfd58cc498c569d9d3eaa6f21c21d15f8b19722d929a1e73cf2c00",
+    "lib/utils/parser_utils.py": "67bf0df52add8420e3783079a0a620483656ce542be3eec1b868072a582008ff",
+    "lib/nn/models/grin.py": "29f70d6556b958ccb5f0544b72fff23c68525984f83ad44e8a0d06b8819fc7e3"
+  },
+  "data_fingerprint": "39ac868964b9cd497f07b7ee45e1dbc2b2e39a3cdcdd3aab9dda77b1e8184c34",
+  "python": "3.12.14",
+  "torch": "2.14.1+cpu",
+  "numpy": "2.5.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "data": {
+    "dataset": "AQI-36",
+    "url": "https://huggingface.co/datasets/TorchSpatiotemporal/ProcessedDatasets/resolve/v1.0.0/air/air_quality.zip",
+    "archive_sha256": "95d3c5cab14fc007f43c57b745a93e5f88201cbb92a755644ca9777848343317",
+    "small36_sha256": "aedcb5080287fba05e99cd4b692300968b9c33113117db9fa37f2aa955a1091d",
+    "protocol_commit": "4a28afbb092600b6e6abeeabaaf67e87dbd1ed6e",
+    "window": 36,
+    "stride": 1,
+    "test_months": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "val_fraction": 0.1,
+    "adj_threshold": 0.1,
+    "graph_theta_km": 26.677876821579837,
+    "mean": 90.6363754272461,
+    "std": 83.54097747802734,
+    "train_windows": 4948,
+    "val_windows": 564,
+    "test_windows": 2788,
+    "original_missing": 41771,
+    "fixed_eval_targets": 35737,
+    "date_start": "2014-05-01 01:00:00",
+    "date_end": "2015-04-30 23:00:00"
+  },
+  "loss": "sum of five masked MAEs on original visible training targets, scaled units",
+  "selection": "minimum validation window-weighted MAE, original units",
+  "final_scoring": "overlapping test predictions averaged per timestamp, then masked MAE",
+  "deviations": [
+    "Reduced training budget; not a full paper reproduction",
+    "Cosine schedule compressed to the selected epoch budget",
+    "One seed rather than five published runs"
+  ]
+}
