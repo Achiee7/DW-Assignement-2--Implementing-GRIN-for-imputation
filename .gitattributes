@@ -7,3 +7,5 @@
 *.pt -text
 *.npz -text
 *.png -text
+# Artifact checksums cover exact bytes, including JSON line endings.
+results/** -text
